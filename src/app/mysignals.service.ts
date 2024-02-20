@@ -9,6 +9,7 @@ export class MysignalsService {
   constructor() { }
   increment(){
     this.count.update((value)=> value + 1);
+    console.log(this.count())
   }
   decrement(){
     if(this.count() != 0)

@@ -12,5 +12,8 @@ export class Child1Component {
   title = "child1.component"
   
   constructor(private mySignal: MysignalsService){}
-  count = this.mySignal.getCount();
+  getCount(){
+    return this.mySignal.getCount();
+  }
+  
 }
